@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+        }
+        container {
+            height:100vh;
+            width:100vw;
+            display: grid;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            grid-template-rows: 7% 8% 60% 10% 15%; 
+            grid-template-columns: 7% 30% 26% 30% 7%; 
+            grid-template-areas:  
+            "zeile1 zeile1 zeile1 zeile1 zeile1"
+            "zeile2 zeile2 zeile2 zeile2 zeile2"
+            "zeile3 zeile3 zeile3 zeile3 zeile3"
+            "zeile4 zeile4 zeile4 zeile4 zeile4"
+            "zeile5 zeile5 zeile5 zeile5 zeile5";
+        }
+        zeile1 {
+            grid-area: zeile1;
+            background-color: #f0f0f0;
+        }
+        zeile2 {
+            grid-area: zeile2;
+            background-color: #d0d0d0;
+        }
+        zeile3 {
+            grid-area: zeile3;
+            background-color: #b0b0b0;
+        }
+        zeile4 {
+            grid-area: zeile4;
+            background-color: #909090;
+        }
+        zeile5 {
+            grid-area: zeile5;
+            background-color: #707070;
+        }
+    </style>
+</head>
+<body>
+    <container>
+        <zeile1></zeile1>
+        <zeile2></zeile2>
+        <zeile3></zeile3>
+        <zeile4></zeile4>
+        <zeile5></zeile5>
+    </container>
+</body>
+</html>
