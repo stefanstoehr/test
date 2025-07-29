@@ -13,41 +13,27 @@
         }
         container {
             position: absolute;
-            height:100vh;
-            top:10vh;
-            bottom:10vh;
-            width:100vw;
-            display: grid;
             margin: 0;
             padding: 0;
-            
-            grid-template-rows: 5vh 5vh 60vh 10vh;
-            grid-template-columns: 7% 30% 26% 30% 7%; 
-            grid-template-areas:  
-            "zeile1 zeile1 zeile1 zeile1 zeile1"
-            "zeile2 zeile2 zeile2 zeile2 zeile2"
-            "zeile3 zeile3 zeile3 zeile3 zeile3"
-            "zeile4 zeile4 zeile4 zeile4 zeile4";
+            height:auto;
+            width:100vw;
+            top:30px;
+            bottom:30px;
+            display: flex;
+            flex-direction: column;
         }
         zeile1 {
-            grid-area: zeile1;
-            background-color: #f0f0f0;
+            background-color: yellow;
+            flex-grow: 1;
+            
         }
         zeile2 {
-            grid-area: zeile2;
-            background-color: #d0d0d0;
+            background-color: cyan;
+            flex-grow: 1;
         }
         zeile3 {
-            grid-area: zeile3;
-            background-color: #b0b0b0;
-        }
-        zeile4 {
-            grid-area: zeile4;
-            background-color: #909090;
-        }
-        zeile5 {
-            grid-area: zeile5;
-            background-color: #707070;
+            background-color: magenta;
+            flex-grow: 1;
         }
     </style>
 </head>
@@ -56,7 +42,6 @@
         <zeile1></zeile1>
         <zeile2></zeile2>
         <zeile3></zeile3>
-        <zeile4></zeile4>
     </container>
 </body>
 </html>
