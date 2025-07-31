@@ -44,9 +44,11 @@
             position: absolute;
             background-color: red;
             height: 100%;
+            width: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
+            font-size: clamp(1rem, 2vw, 3rem); /* Dynamische Schriftgröße */
         }
     </style>
 </head>
@@ -56,7 +58,6 @@
         <zeile1>
             <div class="stuff">
                 <div>Hello</div>
-                <div>World</div>
             </div>
         </zeile1>
         <zeile3></zeile3>
