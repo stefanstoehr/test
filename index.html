@@ -10,6 +10,9 @@
             padding: 0;
             overflow: hidden;
             background-color: rgb(122,33,189);
+            font-size: 16px; /* Einheitliche Schriftgröße */
+            line-height: 1; /* Einheitliche Zeilenhöhe */
+            height: 100%; /* Sicherstellen, dass die Höhe korrekt berechnet wird */
         }
     
         .flex-container {
@@ -20,18 +23,21 @@
             width: 100vw;
             display: flex;
             flex-direction: column;
+            align-items: stretch; /* Elemente strecken sich gleichmäßig */
         }
     
         .zeile1, .zeile3, .zeile4 {
             display: block;
             box-sizing: border-box;
-            overflow: hidden; /* Verhindert, dass der Inhalt die Höhe beeinflusst */
-            min-height: 0; /* Setzt die Mindesthöhe auf 0 */
-            flex-basis: 0; /* Basisgröße auf 0 setzen */
+            overflow: hidden;
+            min-height: 0;
+            flex-basis: 0;
+            text-align: center; /* Text zentrieren */
+            white-space: nowrap; /* Verhindert Zeilenumbrüche */
         }
     
         .zeile1 {
-            background-color: yellow;
+            background-color: cyan;
             flex-grow: 0.2;
         }
     
