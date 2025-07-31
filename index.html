@@ -10,64 +10,42 @@
             padding: 0;
             overflow: hidden;
             background-color: rgb(122,33,189);
-            font-size: 16px; /* Einheitliche Schriftgröße */
-            line-height: 1; /* Einheitliche Zeilenhöhe */
-            height: 100%; /* Sicherstellen, dass die Höhe korrekt berechnet wird */
         }
-    
-        .flex-container {
+        
+
+        flex-container {
             position: absolute;
-            top:0;
-            bottom:0;
             margin: 0;
             padding: 0;
-            height: 100vh;
-            width: 100vw;
+            height:auto;
+            width:100vw;
+            top:0px;
+            bottom:0px;
             display: flex;
             flex-direction: column;
-            align-items: stretch; /* Elemente strecken sich gleichmäßig */
         }
-    
-        .zeile1, .zeile3, .zeile4 {
-            display: block;
-            box-sizing: border-box;
-            overflow: hidden;
-            min-height: 0;
-            flex-basis: 0;
-            text-align: center; /* Text zentrieren */
-            white-space: nowrap; /* Verhindert Zeilenumbrüche */
-        }
-    
-        .zeile1 {
-            background-color: blue;
+        zeile1 {
+            background-color: yellow;
             flex-grow: 0.2;
+            
         }
-    
-        .zeile3 {
+        zeile3 {
             background-color: magenta;
             flex-grow: 1;
         }
-    
-        .zeile4 {
+        zeile4 {
             background-color: orange;
             flex-grow: 0.2;
-        }
-        .text{
-            position: relative;
-            color: white;
-            height:auto;
         }
     </style>
 </head>
 <body>
     
-    <div class="flex-container">
-        <div class="zeile1">
-            
-        </div>
-        <div class="zeile3"></div>
-        <div class="zeile4"></div>
-    </div>
+    <flex-container>
+        <zeile1></zeile1>
+        <zeile3></zeile3>
+        <zeile4></zeile4>
+    </flex-container>
     
 </body>
 </html>
