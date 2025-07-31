@@ -25,24 +25,33 @@
             flex-direction: column;
         }
         zeile1 {
+            position: relative;
             background-color: yellow;
             flex-grow: 0.2;
             
         }
         zeile3 {
+            position: relative;
             background-color: magenta;
             flex-grow: 1;
         }
         zeile4 {
+            position: relative;
             background-color: orange;
             flex-grow: 0.2;
+        }
+        .stuff {
+            position: absolute;
+            bottom: 0;
         }
     </style>
 </head>
 <body>
     
     <flex-container>
-        <zeile1></zeile1>
+        <zeile1>
+            <div class="stuff">Arschloch!</div>
+        </zeile1>
         <zeile3></zeile3>
         <zeile4></zeile4>
     </flex-container>
